@@ -18,7 +18,22 @@ function fridayTheThirteenth(year){
 var numberOfBlackFridays = fridayTheThirteenth(1962);
 console.log(numberOfBlackFridays);
 
-
+function firstSunday(yearStart, yearEnd){
+	var date = new Date();
+	var sundaysSince = 0;
+	for(var i =0; i<=11; i++){
+		for(var j= yearStart;j<yearEnd ;j++){
+			var targetDate = date.setFullYear(j, i, 0);
+			var targetDayOfWeek = date.getDay(); 
+			// console.log(targetDayOfWeek);
+			if(targetDayOfWeek === 0){
+				sundaysSince++;
+			}
+		}
+	}
+	return sundaysSince;
+}
+firstSunday(1901, 2000);
 
 
 
