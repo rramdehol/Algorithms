@@ -15,5 +15,10 @@ function fridayTheThirteenth(year){
 	}
 	return fridayTheThirteenthDayCounter;
 }
+var numberOfBlackFridays = fridayTheThirteenth(1962);
+console.log(numberOfBlackFridays);
 
-fridayTheThirteenth(1962);
+
+
+
+

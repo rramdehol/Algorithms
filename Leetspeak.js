@@ -1,17 +1,3 @@
-// function leetSpeak(paragraph){
-// 	var lengthOfParagraph = paragraph.length;
-// 	var paragraphToUpperCase = paragraph.toUpperCase();
-// 	// var checkerArray = ["A","E"."G","I","O","S","T"];
-// 	// console.log(lengthOfParagraph);
-// 	for(var i=0; i<=lengthOfParagraph;i++){
-// 		var elementInString = paragraph[i];
-// 		// console.log(elementInString);
-// 		if(elementInString === "A"){
-
-// 		}
-
-// 	}
-// }
 function leetSpeak(paragraph){
 	var checkerArray = ["A","E","G","I","O","S","T"];
 	var replaceWith = ["4","3","6","1","0","5","7"];
@@ -24,10 +10,9 @@ function leetSpeak(paragraph){
 			paragraphToUpperCase = updatedParagraph; 
 		}
 	}
-	 console.log(paragraphToUpperCase);
+	return paragraphToUpperCase;
 }
+var paragraph = "Given a paragraph";
+var encodedMessage = leetSpeak(paragraph);
+console.log(encodedMessage);
 
-// var paragraph = "Given a paragraph".toUpperCase();
-// paragraph[1];
-// console.log(paragraph);
-// leetSpeak(paragraph);

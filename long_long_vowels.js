@@ -15,6 +15,6 @@ function longLongVowels(string){
 // 	console.log(updatedString);
 	return updatedString.replace(updatedString[0],updatedString[0].toUpperCase());
 }
-string = "Eeat"
+string = "Aardvark"
 var updatedString = longLongVowels(string);
 console.log(updatedString);
