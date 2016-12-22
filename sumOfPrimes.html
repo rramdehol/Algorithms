@@ -29,12 +29,13 @@ function getPrime(n){
      }
      i++;
  }
-  var sum = prime.reduce(function(currentValue, totalValue){
+  var sum = prime.reduce(function(totalValue, currentValue){
       return currentValue + totalValue;
-      }, 0);
+      },0);
    // console.log(sum)
    return sum;
 }
+
 
 // function add(total, currentValue){
     // return total + currentValue

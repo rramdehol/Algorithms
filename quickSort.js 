@@ -1,0 +1,20 @@
+
+var array =[];
+function quicksort(array){
+	// Satrt the eft array left of the wall
+	var left = [];
+	// Init the aaray rigth of the wall
+	var right = [];
+	// pick the frisy number as an arbitrary pivot element
+	var pivot =[0];
+	// Run through the array, and test the pviot, 1st element agaianst each
+	for (let i=0;;){
+		if (arr[i]<pivot[i]){
+			left.push(array[i]);
+		}
+		else{
+			right.push(array[i]);
+		}
+		return quicksort(left).concat(pivot, quicksort(right));
+	}	
+}
